@@ -37,7 +37,6 @@ class ImageViewer(qtw.QGraphicsView):
         self.setDragMode(qtw.QGraphicsView.ScrollHandDrag)
 
         # Tooltip hovering next to mouse (used for info like zoom percentage)
-        self.mouse_tooltip = qtw.QToolTip()
         self.zoom_out_factor = 1 / self.zoom_in_factor
 
     # Convenience for parent script (no need to call through "viewerScene")
